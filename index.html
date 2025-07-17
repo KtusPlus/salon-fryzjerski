@@ -5,43 +5,51 @@
         <meta http-equiv="X-UA-Compatible" content="IE-edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styl.css">
-        <title>Moje Portfolio</title>
+        <title>StylowyFryz - Salon Fryzjerski</title>
     </head>
     <body>
         <header>
-            <h1>Jakub Kropisz</h1>
-            <p>Frontend Developer * HTML/CSS/JS</p>
-            <p>Backend Developer * PHP/MYSQL</p><br><br>
-            <button id="toggleTheme">Zmień motyw</button>
+            <h1>StylowyFryz</h1>
+            <p>Profesjonalny salon fryzjerski dla niego i dla niej.</p>
+            <nav>
+                <a href="#oferta">Oferta</a>
+                <a href="#cennik">Cennik</a>
+                <a href="#kontakt">Kontakt</a>
+            </nav>
         </header>
-        <section id="omnie">
-            <h2>O mnie</h2>
-            <div class="omnie">
-            <p>Cześć! Nazywam się Jakub i tworzę nowoczesne strony internetowe. <br><br> Skupiam się przede wszyskim na estetyce, prostocie, użyteczności i responsywności. <br><br> Obecnie szukam zleceń - chętnie stworzę coś i dla Ciebie!</p>
+        <section id="oferta">
+            <h2>Nasza oferta</h2>
+            <div class="ul">
+                Strzyżenie męskie<br>
+                Strzyżenie damskie|<br>
+                Koloryzacja<br>
+                Stylizacja włosów<br>
+                Usługi pielęgnacyjne<br>
             </div>
         </section>
-        <section id="projects">
-            <h2>Projekty</h2>
-            <div class="project">
-                <h3>Strona salonu fryzjerskiego</h3>
-                <p>Responsywna wizytówka z formularzem i mapką</p>
-                <a href="#">Zobacz projekt</a> | <a href="#">Kod źródłowy</a>
-            </div>
-            <div class="project">
-                <h3>Landing dla aplikacji</h3>
-                <p>Strona promująca fikcyjną aplikację mobilną</p>
-                <a href="#">Zobacz projekt</a> | <a href="#">Kod źródłowy</a>
-            </div>
-            <div class="project">
-                <h3>Landing dla aplikacji</h3>
-                <p>Strona promująca fikcyjną aplikację mobilną</p>
-                <a href="#">Zobacz projekt</a> | <a href="#">Kod źródłowy</a>
+        <section id="cennik">
+            <h2>Cennik</h2>
+                <table>
+                    <tr><td>Strzyżenie damskie</td><td>90 zł</td></tr>
+                    <tr><td>Strzyżenie męskie</td><td>40 zł</td></tr>
+                    <tr><td>Koloryzacja</td><td>120 zł</td></tr>
+                    <tr><td>Stylizacja włosów</td><td>30 zł</td></tr>
+                    <tr><td>Usługi pielęgnacyjne</td><td>120 zł</td></tr>
+                </table>
+        </section>
+        <section id="galeria">
+            <h2>Galeria</h2>
+            <div class="galeria">
+                <img src="img/salon1.png" alt="Salon 1">
+                <img src="img/salon2.png" alt="Salon 2">
+                <img src="img/salon3.png" alt="Salon 3">
             </div>
         </section>
-        <section id="contact">
-            <h2>Kontakt</h2>
-            <div class="contact">
-                <form action="send.php" method="post" class="contact-forms">
+        <section id="kontakt">
+            <h2>Skontaktuj się z nami</h2>
+            <div class="kontakt">
+                <form>
+                    <form action="send.php" method="post">
                     <input type="text" name="name" placeholder="Twoje imię" required><br><br>
                     <input type="email" name="email" placeholder="Twój email" required><br><br>
                     <textarea name="message" placeholder="Twoja wiadomość" required></textarea><br><br>
@@ -51,7 +59,7 @@
         </section>
 
         <footer>
-            <p>&copy; 2025 Jakub Kropisz</p>
+            <p>&copy; 2025 StylowyFryz</p>
             <p>Wszystkie prawa zastrzeżone</p>
         </footer>
         <script src="script.js"></script>
