@@ -5,9 +5,9 @@
         $email = htmlspecialchars(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
         $message = htmlspecialchars(trim($_POST["message"]));
 
-        $to = "kropisz.jakub15@gmail.com";
-        $subject = " Nowa wiadomość z portfolio od $name";
-        $body = "Imię: $name\nEmail: $email\nWiadomość:\n$message";
+        $to = "mangomustrard@gmail.com";
+        $subject = "Wiadomość z formularza StylowyFryz";
+        $body = "Imię: $name\nEmail: $email\n\n$message";
 
         $headers = "From: $email";
 
@@ -17,11 +17,12 @@
         }
         else
         {
-            echo "<p>Coś poszło nie tak. Spróbuj ponownie później.</p>";
+            echo "<p>Wysyłka się nie powiodła.</p>";
         }
     }
     else
     {
-        echo "<p>Niepoprawna metoda żądania.</p>";
+        echo "<p>Nieprawidłowe żądanie.</p>";
     }
 ?>
+//nie działa bo to github
