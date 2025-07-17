@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styl.css">
+        <title>Moje Portfolio</title>
+    </head>
+    <body>
+        <header>
+            <h1>Jakub Kropisz</h1>
+            <p>Frontend Developer * HTML/CSS/JS</p>
+            <p>Backend Developer * PHP/MYSQL</p><br><br>
+            <button id="toggleTheme">Zmień motyw</button>
+        </header>
+        <section id="omnie">
+            <h2>O mnie</h2>
+            <div class="omnie">
+            <p>Cześć! Nazywam się Jakub i tworzę nowoczesne strony internetowe. <br><br> Skupiam się przede wszyskim na estetyce, prostocie, użyteczności i responsywności. <br><br> Obecnie szukam zleceń - chętnie stworzę coś i dla Ciebie!</p>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>Projekty</h2>
+            <div class="project">
+                <h3>Strona salonu fryzjerskiego</h3>
+                <p>Responsywna wizytówka z formularzem i mapką</p>
+                <a href="#">Zobacz projekt</a> | <a href="#">Kod źródłowy</a>
+            </div>
+            <div class="project">
+                <h3>Landing dla aplikacji</h3>
+                <p>Strona promująca fikcyjną aplikację mobilną</p>
+                <a href="#">Zobacz projekt</a> | <a href="#">Kod źródłowy</a>
+            </div>
+            <div class="project">
+                <h3>Landing dla aplikacji</h3>
+                <p>Strona promująca fikcyjną aplikację mobilną</p>
+                <a href="#">Zobacz projekt</a> | <a href="#">Kod źródłowy</a>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Kontakt</h2>
+            <div class="contact">
+                <form action="send.php" method="post" class="contact-forms">
+                    <input type="text" name="name" placeholder="Twoje imię" required><br><br>
+                    <input type="email" name="email" placeholder="Twój email" required><br><br>
+                    <textarea name="message" placeholder="Twoja wiadomość" required></textarea><br><br>
+                    <button type="submit">Wyślij</button><br>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Jakub Kropisz</p>
+            <p>Wszystkie prawa zastrzeżone</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
