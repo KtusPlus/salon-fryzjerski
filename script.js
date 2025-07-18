@@ -1,11 +1,12 @@
-document.querySelectorAll('a[href^="#"]').foreEach(anchor =>
+document.querySelectorAll('a[href^="#"]').forEach(anchor =>
 {
     anchor.addEventListener("click", function (e)
 {
-    e.preventDeafult();
+    e.preventDefault();
     document.querySelector(this.getAttribute("href")).scrollIntoview(
 {
     behavior: "smooth"
 });
 });
 });
+
